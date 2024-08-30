@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            background-color: red;
+           height: 300px;
+        }
+        .box{
+        border: 2px solid black;
+        display: inline-block;
+      
+          /* transform: translate(134px,56px) rotateX(45deg); */
+          /* transform-origin: 0; */
+                /* transform: scaleX(8); */
+                /* transform: scaleY(8); */
+                /* transform: skew(10deg,10deg); */
+                /* transform: matrix(); */
+            }
+                img{
+                    width: 146px;
+                    /* transition-property: width;
+                    transition-duration: 3s;
+                    transition-timing-function: ease-in; */
+                    transition: width 1s ease-in-out 2s;
+                }
+                /* img:hover{
+                    width: 99px;
+                } */
+               
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <img id="myImage" src="https://media.istockphoto.com/id/1405572693/photo/personal-training-studio-with-barbell-dumbbells-exercise-bike-and-garden-view-from-the-window.webp?b=1&s=612x612&w=0&k=20&c=SK5mrhrSyZ-F_kHJMvOvUcnPCyrG4_8cnG9sO5bOAoA=" alt="">
+        
+        <button id="btn">Toggle</button>
+    </div>
+    </div>
+    <script>
+         myImage.style.width = '546px'
+        btn.addEventListener("click", ()=>{
+            if(myImage.style.width === '546px'){
+                myImage.style.width = "146px";
+            }
+           else if( myImage.style.width === '146px'){
+             myImage.style.width = "546px";
+           }
+        })
+    </script>
+</body>
+</html>

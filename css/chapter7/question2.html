@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question2</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        li {
+            display: inline-grid;
+            margin: 0 23px;
+            padding: 24px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .box1 {
+            background-color: aqua;
+            /* width: 224px; */
+        }
+
+        .box2 {
+            background-color: gold;
+            /* width: 224px; */
+        }
+
+        .sufi-box {
+            border: 1px solid;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns: 40px 100px 200px 200px 50px; */
+            grid-template-columns: repeat(4, 1fr);
+            /* gap: 30px 10px; */
+            row-gap: 20px;
+            column-gap: 10px;
+            max-width: 1200px;
+margin: auto;
+        }
+
+        .sufi-box>div {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sufi-box>div:hover{
+            transform: scale(1.1);
+            /* transform: rotate(360deg); */
+            transition: ease-in 0.8s;
+        }
+
+        .sufi-box>div>button:hover{
+            transform: skewX(20deg);
+            transition: ease-in 0.8s;
+
+            color: red;
+            background: #000;
+        }
+
+
+        .sufi-box  div  img {
+            width: 100%;
+        }
+
+
+        @media screen and (min-width: 426px) and (max-width: 768px) {
+            .sufi-box {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(6, 100px);
+            }
+
+        }
+
+        @media screen and (max-width: 425px) {
+            .sufi-box {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(12, 100px);
+
+                /* display: flex;
+                flex-direction: column; */
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa ad laborum, quidem aliquam iste unde sequi
+            eaque nihil harum, esse deserunt dolorum corrupti modi exercitationem odit at numquam vero. Nisi?
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur possimus tempore unde ut at sit,
+            laudantium esse accusamus aliquam illum aut dolorum distinctio neque corporis modi dicta rerum dolor odit.
+        </div>
+    </div>
+
+    <div class="sufi-box">
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+        <div><img
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQUbsvMPrGa9KUmPEYWBKA9ocrdZJxEZY_p321hEVmnotOzmfsIBs9h_dWOo-yIenQJCBlljAiWXeHPYn1FyKeoNLZjZDuX79YFuvPpqXb0NwvSCkyC_v9prIE"
+                alt="">
+            <h1>asdasd</h1>
+            <p>susif</p> <button>Click</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
