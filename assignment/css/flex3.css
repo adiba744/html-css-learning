@@ -50,9 +50,15 @@
     width: 6vw;
 }
 
-.child>.box>h4 {
+.child >.box>h4 {
     font-family: sans-serif;
     color: white;
     margin: 2px;
-    width: 100px;
+    width: 80px;
+    
 }
+
+#padd{
+    padding: 15px;
+}
+
