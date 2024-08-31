@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.grand{
+   
+    background-color: #00baf2;
+    /* height: 45vh; */
+    margin: 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.parent > h1{
+   
+    color: white;
+   
+    font-family: sans-serif;
+  
+    
+}
+.child{
+    display: flex;
+    gap: 10px;
+   
+
+}
+
+.child > .container{
+     padding: 17px 20px 5px 10px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+     border-radius: 5px;
+     padding: 20px;
+     padding-right: 40px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.child > .container > img{
+    width: 6vw;
+   
+}
+
+
+.child > .container > h4{
+    /* font-size: 6px; */
+    margin: 2px;
+    color: white;
+    font-family: sans-serif;
+    width: 100px;
+}
