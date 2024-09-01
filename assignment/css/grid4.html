@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid4 Calculator</title>
+    <style>
+    .calculator{
+      display: grid;
+      justify-content: center;
+    }
+         h1{
+            text-align: center;
+            color: #478789;
+         }
+        .parent{
+            display: grid;
+           align-items: center;
+            padding: 30px;
+            gap: 20px;
+            justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+            width: 400px;
+            
+            
+        }
+        .parent > .child1{
+           
+            padding: 40px;
+             border-radius: 8px;
+             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+          
+            
+        }
+        .parent > .child2{
+            
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            /* padding: 30px; */
+            gap: 20px;
+            
+        }
+        .parent > .child2 > div{
+            /* border: 2px solid black; */
+            padding: 20px;
+            border-radius: 15px;
+            font-size: xx-large;
+            font-weight: bolder;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.15) 0px 3px 6px;
+           display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+        }
+        .child2 > div:nth-child(4){
+          background-color: black;
+          color: white;
+        }
+        .child2 > div:nth-child(8){
+          background-color: black;
+          color: white;
+        }
+        .child2 > div:nth-child(12){
+          background-color: black;
+          color: white;
+          
+        }
+        .child2 > div:nth-child(13){
+          background-color: red;
+          color: white;
+        }
+        .child2 > div:nth-child(15){
+          background-color: black;
+          color: white;
+        }
+        .child2 > div:nth-child(16){
+          background-color: black;
+          color: white;
+        }
+   @media screen and (max-width: 400px) {
+    .calculator{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+    .parent{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+   }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>MY Calculator</h1>
+        <div class="parent">
+            <div class="child1">
+
+            </div>
+            <div class="child2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>c</div>
+                <div>0</div>
+                <div>=</div>
+                <div>/</div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
