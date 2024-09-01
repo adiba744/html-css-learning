@@ -20,11 +20,11 @@
             background-color: #fff3f5;
             margin: 10px;
             width: 100%;
+            text-align: center;
         }
 
         .container>h2 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            justify-self: center;
             color: #6c6a6a;
 
         }
@@ -32,7 +32,6 @@
         .container>h1 {
             font-weight: bolder;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            justify-self: center;
         }
 
         .parent {
@@ -43,7 +42,7 @@
             grid-template-rows: repeat(2, 1fr);
             gap: 20px;
             padding: 10px;
-            width: 900;
+        
         }
 
         .parent>div {
@@ -52,7 +51,7 @@
             border-radius: 15px;
             padding: 10px;
             background-color: white;
-
+              
         }
 
         .parent>div>img {
@@ -80,9 +79,11 @@
 
         @media screen and (min-width: 400px) and (max-width: 720px) {
             .parent {
+                justify-content: center;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(8, 1fr);
                 width: 70%;
+                text-align: center;
             }
 
             .parent>div {
