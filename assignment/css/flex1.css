@@ -81,7 +81,7 @@ div button {
         .cards{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            /* place-items: center; */
+            place-items: center;
             gap: 1px;
             width: fit-content;
             margin: auto;

@@ -119,9 +119,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-  This example creates a scrollbar with box shadow:
+  /* This example creates a scrollbar with box shadow:
   
-  Example
+  Example */
   /* width */
   ::-webkit-scrollbar {
     width: 20px;
