@@ -52,6 +52,7 @@ button.normal {
     cursor: pointer;
     border: none;
 }
+
 button.white {
     font-size: 13px;
     font-weight: 600;
@@ -345,7 +346,8 @@ button.white {
     flex: 1;
     padding: 30PX;
 }
-#sm-banner .banner-box2{
+
+#sm-banner .banner-box2 {
     background-image: url("img/banner/b10.jpg");
 }
 
@@ -361,17 +363,26 @@ button.white {
     font-size: 28px;
     font-weight: 800;
 }
+
 #sm-banner .banner-box>span {
     color: white;
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 14PX;
-} 
+}
 
-#sm-banner .banner-box:hover >button{
-   background-color: #088178;
+#sm-banner .banner-box:hover>button {
+    background-color: #088178;
     border: 1px solid #088178;
 }
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
 #banner3 .banner-box {
     background-image: url("img/banner/b7.jpg");
     display: flex;
@@ -383,16 +394,113 @@ button.white {
     background-position: center;
     background-size: cover;
     /* flex: 1; */
-    padding: 30PX;
+    padding: 20PX;
     margin-bottom: 20px;
 }
-#banner3 .banner-box >h2{
+
+#banner3 .banner-box2 {
+    background-image: url("img/banner/b4.jpg");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("img/banner/b18.jpg");
+}
+
+#banner3 .banner-box>h2 {
     color: white;
     font-size: 22px;
     font-weight: 900;
 }
-#banner3 .banner-box >h3{
+
+#banner3 .banner-box>h3 {
     color: #ec544e;
     font-size: 15px;
     font-weight: 800;
+}
+
+#newsletters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-color: #041e42;
+    background-position: 20% 30%;
+}
+
+#newsletters .newstext>h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#newsletters .newstext>p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletters .newstext>p>span {
+    color: #ca9c11;
+}
+
+#newsletters .form {
+    display: flex;
+}
+
+#newsletters input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+#newsletters .form>button {
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    padding-bottom: 30px;
+}
+
+footer .col>h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+
+footer .col>p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer .col>a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10;
 }
