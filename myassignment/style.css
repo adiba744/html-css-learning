@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
 }
 
-body {
-    width: 100%;
-}
+
+/* html {
+    scroll-behavior: smooth;
+  } */
 
 h1 {
     font-size: 50px;
@@ -39,6 +42,14 @@ p {
 .section-p1 {
     padding: 40px 80px;
 }
+
+.section-m1 {
+    margin: 40px 0;
+  }
+  
+  body {
+    width: 100%;
+  }
 
 button.normal {
     font-size: 14px;
@@ -120,11 +131,19 @@ button.white {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
 
 #hero {
     background-image: url("img/hero4.png");
     height: 60vh;
-    /* width: 100%; */
+    width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -227,7 +246,7 @@ button.white {
 }
 
 #product1 .pro {
-    width: 20%;
+    width: 23%;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
@@ -337,12 +356,11 @@ button.white {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    /* text-align: center; */
+    text-align: center;
     min-width: 580px;
     height: 50vh;
     background-position: center;
     background-size: cover;
-    /* border: 1px solid; */
     flex: 1;
     padding: 30PX;
 }
@@ -446,6 +464,7 @@ button.white {
 
 #newsletters .form {
     display: flex;
+    width: 40%;
 }
 
 #newsletters input {
@@ -474,6 +493,7 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
 }
 
 footer .col {
@@ -503,4 +523,183 @@ footer .col>a {
     text-decoration: none;
     color: #222;
     margin-bottom: 10;
+}
+
+footer .follow .icon>i {
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row>img {
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+
+footer .follow .icon>i:hover,
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    align-items: center;
+}
+
+/* medta quaries */
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 20px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+
+    }
+
+    #navbar li {
+        padding-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-style: 24px;
+        padding-left: 20px;
+    }
+
+    #navbar>li>a.active::after,
+    #navbar>li>a:hover::after {
+        bottom: 25px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        */ color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+
+    }
+
+    #feature {
+        justify-content: center;
+  }
+  #feature .fe-box {
+    margin: 15px 15px;
+}
+#product1>.pro-container {
+        justify-content: center;
+
+}
+#product1 .pro {
+    margin: 15px 15px;
+}
+#banner {
+    height: 20vh;
+
+}
+#sm-banner .banner-box {
+    min-width:100%;
+    height: 30vh;
+
+}
+#banner3 {
+    padding: 0 40px;
+}
+#banner3 .banner-box {
+    width: 28%;
+}
+#newsletters .form {
+    width: 80%;
+}
+}
+
+@media (max-width:477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 38px;
+      
+    }
+    #hero {
+        background-position: 55%;
+        padding: 0 20px;
+    }
+    #feature {
+        justify-content: space-between;
+      
+    }
+    #feature .fe-box {
+        width: 155px;
+margin: 0 0 15px 0;
+    }
+    #product1 .pro {
+        width: 100%;
+    
+    }
+    #banner {
+        height: 40vh;
+    }
+    #sm-banner {
+
+        gap: 20px;
+    }
+    #sm-banner .banner-box {
+        height: 40vh;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+    }
+    #newsletters {
+        flex-direction: column;
+    }
+    #newsletters .form {
+        width: 100%;
+    }
+    footer .copyright {
+        align-items: start;
+    }
 }
