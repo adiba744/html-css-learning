@@ -3,14 +3,14 @@
 
 
 function checkIsDivisibleOf3(num) {
-    // if (num % 3 == 0) {
-    //     console.log(num, "is multiple of 3")
-    // } else {
-    //     console.log(num, "is not multiple of 3")
+    if (num % 3 == 0) {
+        console.log(num, "is multiple of 3")
+    } else {
+        console.log(num, "is not multiple of 3")
 
-    // }
+    }
 
-    num % 3 == 0 ? console.log(num, "is multiple of 3") : console.log(num, "is not multiple of 3")
+    // num % 3 == 0 ? console.log(num, "is multiple of 3") : console.log(num, "is not multiple of 3")
 }
 
 checkIsDivisibleOf3(10)
