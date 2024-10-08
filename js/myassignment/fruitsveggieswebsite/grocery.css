@@ -11,6 +11,21 @@
  
 }
 
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background: lightgreen;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0.5rem;
+    background: green;
+    border-radius: 5rem;
+}
+
+section{
+    padding: 4.5rem 0.1rem;
+}
+
 h2{
     font-size: 1.6rem;
     font-weight: 600;
@@ -25,34 +40,6 @@ body{
     width: 100%;
 }
 
-/* .btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:rgb(26, 173, 26);
-    border-radius: 5rem;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: white;
-    max-width: 160px;
-    font-weight: 400;
-    column-gap: 00.5rem;
-}
-
-.btn:hover{
-    background-color: orangered;
-    transition: 0.2s;
-}
-
-.btn >.fa{
-    color: rgb(44, 44, 44);
-    background-color: white;
-    padding: 0.2rem;
-    border-radius: 1.2rem;
-    font-size: 16px;
-    /* margin: auto; 
-} */
-
 #header{
     display: flex;
     justify-content: space-between;
@@ -66,11 +53,6 @@ body{
     transition: 0.5s;
     z-index: 1000;
 }
- /* #basket{
-display: flex;
-font-size: 16px;
-cursor: pointer;
-} */
 
 #icon{
     display: flex;
@@ -90,6 +72,7 @@ color:orange
 
 #navbar{
     display: flex;
+    column-gap: 00.5rem;
 }
 #navbar > li{
     list-style: none;
@@ -101,7 +84,7 @@ color: rgb(44, 44, 44);
 padding: 10px 20px;
 cursor: pointer;
 font-size: 1.1rem;
-font-weight: 500px;
+font-weight: 500;
 }
 
 #navbar > li>a:hover,
@@ -110,7 +93,7 @@ font-weight: 500px;
     color: white;
     border-radius: 5rem;
     padding: 8px 10px;
-    transition: bac;
+    transition: 0.2s;
 }
 
 #profile {
@@ -122,7 +105,7 @@ font-weight: 500px;
 
 #profile > img{
 width: 50px;
-height: 40px; 
+height: 50px; 
 border-radius: 50%; 
 object-fit: cover;
 object-position: center;  
@@ -169,7 +152,6 @@ object-position: center;
 }
 
 .home-text > span{
-    /* margin-top:5100px; */
     color: green;
     text-transform: uppercase;
     font-weight: 400;
@@ -197,7 +179,7 @@ margin-bottom: 1.2rem;
 } 
 
   .btn:hover{
-    background-color: orangered;
+    background-color: orange;
     transition: 0.2s;
 } 
 
@@ -240,7 +222,8 @@ margin-bottom: 1.2rem;
     padding: 20px 100px;
 }
 
-.categories > .heading{
+.categories > .heading,
+.product > .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -316,19 +299,19 @@ margin-bottom: 1.2rem;
      border-radius: 5rem;
      margin-top: 2rem;
      position: absolute;
-     bottom: -46.5%;
+     bottom: -48.3%;
      display: none;
 }
 
 .hottest > .box > .fa:hover{
-    background: orangered;
+    background: orange;
     transition: 0.2s all linear;
 }
-.hottest > .box:hover > .fa{
+/* .hottest > .box:hover > .fa{
     display: block;
-    transition: 0.2s all linear;
+    transition: 0.2s all linear; 
 
-}
+}*/
 
 .product{
     margin-left: 6.4rem;
@@ -348,13 +331,12 @@ margin-bottom: 1.2rem;
 }
 
 .product > .product-container > .product-box{
-    /* border: 5px solid; */
     width: 100%;
-    padding: 2rem;
-  
+     padding-top: 2rem; 
+     padding-left: 2rem; 
+    padding-right: 2rem;  
     border-radius: 0.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-/* position: relative; */
 
 }
 
@@ -381,7 +363,7 @@ margin-bottom: 1.2rem;
 .product > .product-container > .product-box > h3{
     font-size: 14px;
      font-weight: 600;
-     color: orangered;
+     color: orange;
 
 }
 
@@ -407,7 +389,7 @@ margin-bottom: 1.2rem;
 }
 
 .product > .product-container > .product-box >.bx:hover{
-    background:orangered;
+    background:orange;
      transition: 0.2s all linear;
 }
 
@@ -415,10 +397,10 @@ margin-bottom: 1.2rem;
     position: relative;
     top: -23rem;
     left: -33.6rem;
-    background: orangered;
+    background: orange;
     padding: 4px 18px;
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-    background: orangered;
+    background: orange;
     color: white;
 }
 
@@ -450,7 +432,227 @@ padding: 20px;
     font-size: 16px;
     font-weight: 500;
     padding: 8px;
-    color: rgb(68, 67, 67);
+    color: rgb(68, 67, 67);   
+}
 
+.customers{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9.4rem;
+        margin-right: 6.4rem;
+        margin-top: 4rem;
+}
+.customers > h2{
+   text-align: center;
+}
+
+
+.customers > .review{
+display: flex;
+justify-content: space-between;
+margin: 20px;
+gap: 30px;
+}
+
+.customers > .review > .rating{
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%); 
+   border-bottom: 7px solid rgb(26, 173, 26);
+border-radius: 0.5rem;
+}
+
+.customers > .review > .rating:hover{
+    transform: translateY(10px);
+    transition: 0.2s all linear;
+}
+
+.customers > .review > .rating > .fa-quote-left{
+    color: rgb(26, 173, 26);
+    font-size: 19px;
+    padding-bottom: 10px;
+}
+
+.customers > .review > .rating > .stars{
+    color:orange;
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+.customers > .review > .rating > p{
+    color: rgb(68, 67, 67);   
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 15px;
+
+}
+
+footer{
+    margin-left: 9.4rem;
+    margin-right: 6.4rem;
+    margin-top: 4rem;
+  background-color: rgb(247, 225, 207);
+}
+.footer-containt{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 15px;
+}
+
+.footer-containt > .delicacy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-containt > .delicacy > .shop{
+    text-decoration: none;
+    color: rgb(122, 121, 121);  
+    font-size: 16px; 
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.footer-containt > .delicacy > .shop:hover{
+  color: orange;
+}
+
+.footer-containt > .delicacy > .shop >.fa-shopping-basket{
+    color: orange;
+    padding-right: 10px;
+}
+
+.footer-containt > .delicacy >p{
+    color: rgb(68, 67, 67);  
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer-containt > .delicacy >.icon{
+    display: flex;
+    column-gap: 15px;
+    cursor: pointer;
+}
+.footer-containt > .delicacy >.icon > .fab{
+    color: rgb(26, 173, 26);
+    background: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+.footer-containt > .delicacy >.icon > .fab:hover{
+    color: white;
+    background: rgb(26, 173, 26);
+}
+
+.footer-containt > .footer-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-containt > .footer-box > h4{
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer-containt > .footer-box > a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);  
+   cursor: pointer;
+   font-size: 15px;
+   font-weight: 500;
+}
+
+.footer-containt > .footer-box > a:hover{
+    color: orange;
+}
+
+.footer-containt > .newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
+
+}
+
+.footer-containt > .newsletter > form{
+    border-bottom: 1px solid rgb(68, 67, 67);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.footer-containt >.newsletter > form > input{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.footer-containt >.newsletter > form > .fa-envelope{
+    color: rgb(26, 173, 26);
+}
+
+.footer-containt >.newsletter > form > .fa-arrow-right{
+    color: orange;
+    cursor: pointer;
+}
+
+.copyright{
+    margin-left: 9.4rem;
+    margin-right: 6.4rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.copyright > p{
+font-size: 14px;
+font-weight: 400;
+}
+
+@media (max-width: 799px) {
+    
+    header{
+        /* padding: 12px 4%; */
+    }
+    #navbar{
+        position: absolute;
+        top: 100%;
+         left: 0;
+         right: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start;
+        justify-content: flex-start; */
+        background-color: rgb(255, 255, 255);        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+        transition: 0.2s all linear;
+        cursor: pointer;
+    }
+
+    .bar{
+    
+    }
+
+    #navbar > li > a{
+        padding: 1rem;
+        margin: 1rem;
+        display: block;
+    }
+
+    #navbar > li>a:hover,
+#navbar>li >.home-active{
+    background-color:rgb(26, 173, 26);
+    color: white;
+    border-radius: 0.5rem;
+    
+}
+
+#navbar.active{
+    top: 100%;
+}
 }

@@ -8,3 +8,12 @@ var swiper = new Swiper(".home", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  const bar = document.getElementById('bar')
+  const nav = Document.getElementById('navbar')
+
+  if(bar){
+    bar.addEventListener('click', () =>{
+      nav.classList.add('active');
+    })
+  }
