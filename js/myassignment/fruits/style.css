@@ -627,6 +627,7 @@ header {
     .navbar .home-active {
         color: var(--bg-color);
         border-radius: 00.5rem;
+    
     }
 
     .navbar.active {
